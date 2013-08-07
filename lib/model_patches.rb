@@ -5,11 +5,17 @@
 # See http://stackoverflow.com/questions/7072758/plugin-not-reloading-in-development-mode
 #
 Rails.configuration.to_prepare do
-    OutgoingMessage.class_eval do
-        # Add intro paragraph to new request template
-        def default_letter
-            return nil if self.message_type == 'followup'
-            #"If you uncomment this line, this text will appear as default text in every message"    
-        end
-    end        
+#    OutgoingMessage.class_eval do
+#        # Add intro paragraph to new request template
+#        def default_letter
+#            return nil if self.message_type == 'followup'
+#            #"If you uncomment this line, this text will appear as default text in every message"    
+#        end
+#    end        
+    User.class_eval do
+        # Add user agreement checkbox
+        validates :user_agreement, :acceptance => {
+            :message => _("Please accept the user agreement")
+        }
+    end
 end
