@@ -1,0 +1,72 @@
+<% @title = "Interface de programmation applicative (API)" %>
+
+<%= render :partial => 'sidebar' %>
+
+<div id="left_column_flip">
+<h1><%=@title %></h1>
+
+<h2> Introduction </h2>
+
+<p>Cette page explique la façon dont les programmeurs peuvent faire en sorte que d’autres sites web ou des logiciels interagissent avec JeVeuxSavoir via une API.</p>
+ 
+<p>JeVeuxSavoir n’a pas encore une API complète, mais nous ajoutons graduellement des outils qui sont similaires à une API.
+</p>
+
+<hr>
+
+<h2>Lier les nouvelles requêtes</h2>
+
+<p>Pour encourager vos utilisateurs à mettre des liens vers une autorité publique en particulier, nous proposons des URL avec une forme prédéfinie. Voici les paramètres que vous pouvez ajouter à ces URL, que ce soit dans l’URL ou d’un formulaire..
+
+<ul>
+    <li> <code>title</code> - résumé par défaut de la nouvelle requête.</li>
+    <li> <code>default_letter</code> - le texte par défaut du corps de votre lettre. La salutation (Cher...) et la signature (Sincèrement…) en sont les limites. </li>
+    <li> <code>body</code> - en tant qu’alternative à default_letter, cette option choisit le texte par défaut pour la demande, afin que vous puissiez personnaliser la salutation et la signature.. </li>
+    <li> <code>tags</code> - une liste de tags séparés d’une espace, afin que vous puissiez trouver ou lier des requêtes, par exemple openlylocal spending_id:12345. Le deux-points indique qu’il s’agit d’un « machine tag »..
+</ul>
+
+<hr>
+
+<h2> 2. Flux RSS (Atom pour être précis)</h2>
+
+<p>Il y a des flux Atom sur la plupart des pages qui listent des demandes d’accès à l’information. Vous pouvez les utiliser pour avoir des mises à jour et des liens en format XML. Il y a plusieurs façons de trouver l’URL du flux Atom.</p>
+<ul>
+    <li>Rechercher pour les liens <img src="/images/feed-16.png" alt="">.</li>
+    <li>Examiner le tag <tt>&lt;link rel="alternate" type="application/atom+xml"&gt;</tt> en tête du HTML.
+ </li>
+    <li>Ajouter <tt>/feed</tt> au début d’un autre URL.
+</ul>
+
+<p>Même les recherches compliquées ont des flux Atom. Vous pouvez les utiliser de plusieurs façons différentes, comme une recherche par type de fichier, par date ou par statut.</p>
+
+
+<hr>
+
+<h2> 3. Données JSON </h2>
+
+<p>Plusieurs pages ont des versions JSON, qui vous permettent de télécharger de l’information au sujet d’objets dans un formulaire. Vous pouvez les trouver en…</p>
+
+<ul>
+    <li>Ajoutant <tt>.json à la fin de l’URL</tt></li>
+    <li>Recherchant le tag <tt>&lt;link rel="alternate" type="application/json"&gt;</tt> au début du HTML. </li>
+</ul>
+</p>
+
+<p>Les demandes, les utilisateurs et les autorités ont toutes des versions JSON qui contiennent l’information de base à leur sujet. Chaque flux Atom a un équivalent JSON qui contient l’information au sujet de la liste des événements du flux.
+</p>
+
+<hr>
+<h2> 4. Tableau de toutes les autorités </h2>
+
+<p>
+Un fichier de type tableur fait la liste de toutes les autorités accessibles à travers JeVeuxSavoir:
+<%= link_to "all-authorities.csv", all_public_bodies_csv_url() %>
+</p>
+
+<hr>
+
+<p>Merci de nous contacter si vous avez besoin d’une option API qui n’est pas encore disponible. Nous sommes encore en train de perfectionner l’outil, et il nous fait plaisir d’ajouter ce que l’on nous demande.</p>
+
+<div id="hash_link_padding"></div>
+
+</div>
