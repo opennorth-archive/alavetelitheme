@@ -27,8 +27,11 @@
     </div>
 
     <p class="form_checkbox">
-        <%= check_box 'user_signup', 'user_agreement', { :tabindex => 95 } %>
-        <label for="user_agreement"><%= _('I agree with the user agreement.')%>
+        <%= check_box 'user_signup', 'user_agreement', { :tabindex => 75 } %>
+        <label for="user_agreement"><%= _("J'accepte les
+        <a href='{{conditions_url}}'>conditions d'utilisation et de
+        respect de la vie privée</a>.", :conditions_url =>
+        help_conditions_path.html_safe) %>
     </p>
 
     <p>

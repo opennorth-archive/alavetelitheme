@@ -12,7 +12,7 @@ Rails.configuration.to_prepare do
         end
     end
     HelpController.class_eval do
-        def help_out
+        def conditions
         end
     end
 end

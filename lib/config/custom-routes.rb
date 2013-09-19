@@ -1,8 +1,7 @@
+# -*- coding: utf-8 -*-
 # Here you can override or add to the pages in the core website
 
 Rails.application.routes.draw do
-    # brand new controller example
-    match '/mycontroller' => 'general#mycontroller'
-    # Additional help page example
-    match '/help/help_out' => 'help#help_out'
+    # Conditions d'utilisation et Respect de la vie privée
+    match '/help/conditions' => 'help#conditions', :as => :help_conditions
 end

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Add a callback - to be executed before each request in development,
 # and at startup in production - to patch existing app classes.
 # Doing so in init/environment.rb wouldn't work in development, since
@@ -15,7 +16,7 @@ Rails.configuration.to_prepare do
     User.class_eval do
         # Add user agreement checkbox
         validates :user_agreement, :acceptance => {
-            :message => _("Please accept the user agreement")
+            :message => _("Merci d'accepter les conditions d'utilisation et de respect de la vie privée.")
         }
     end
 end
