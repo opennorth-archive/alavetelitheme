@@ -1,4 +1,4 @@
-<% @title = "Faire une demande d'accès à l'information" %>
+<% @title = "Faire une demande d'accès" %>
 
 <%= render :partial => 'sidebar' %>
 <div id="left_column_flip">
@@ -10,24 +10,24 @@
 <dt id="demande_perso">Puis-je demander de l’information à propos de moi-même? <a href="#demande_perso">#</a> </dt>
 
 <dd>
-<p>Non. Les requêtes de JeVeuxSavoir sont publiques, faites sous la Loi sur l’accès aux documents des organismes publics, et ne doivent pas vous aider à trouver de l’information à propos d’un particulier, y compris vous même.</p>
-<p>Si vous souhaitez connaîre le type d’information que l’autorité publique possède à propos de vous, vous devriez faire une demande d’accès l’information directement auprès de l’autorité concernée. Vous pouvez visiter le site de la Commission d’accès à l’information qui pourra vous guider dans votre démarche.</p>
-<p>Si vous réalisez que quelqu’un a inclus de l’information personnelle, possiblement par erreur, dans une requête, contactez-nous immédiatement afin que nous puissions la retirer.</p>
+<p>Non. Les requêtes de <%= site_name %> sont publiques, faites sous la Loi sur l’accès aux documents des organismes publics, et ne doivent pas vous aider à trouver de l’information à propos d’un particulier, y compris vous même.</p>
+<p>Si vous souhaitez connaîre le type d’information qu'un organisme public possède à propos de vous, vous devriez faire une demande d’accès l’information directement auprès de organisme concerné. Vous pouvez visiter le site de la <a href="http://www.cai.gouv.qc.ca/">Commission d’accès à l’information</a> qui pourra vous guider dans votre démarche.</p>
+<p>Si vous réalisez que quelqu’un a inclus de l’information personnelle, possiblement par erreur, dans une requête, <a href="/help/contact">contactez-nous</a> immédiatement afin que nous puissions la retirer.</p>
 </dd>
 
 
 
-<dt id="quelle_autorite">Je ne suis pas certain à quelle autorité faire ma demande, comment puis-je le savoir? <a href="#quelle_autorite">#</a> </dt>
+<dt id="quelle_autorite">Je cherche un document mais je ne sais pas quelle organisme public le détient, comment puis-je le savoir? <a href="#quelle_autorite">#</a> </dt>
 
 <dd>
 <p>Il peut être difficile de démêler les différents palliers et structures du gouvernement, et comprendre qui a l’information que vous recherchez. Voici quelques trucs:</p>
 <ul>
-    <li>Furetez ou effectuez une recherche sur JeVeuxSavoir pour voir si des requêtes similaires ont été faites.</li>
-    <li>Quand vous avez trouvé l’autorité qui posséderait l’information recherchée, utilisez le bouton ‘’site web’’ du côté droit de leur page et vérifiez leurs activités.  </li>   
-    <li>Contactez l’autorité en question par téléphone ou par courriel pour leur demander si elle possède le type d’information que vous cherchez.</li>
+    <li>Furetez ou effectuez une recherche sur <%= site_name %> pour voir si des requêtes similaires ont été faites.</li>
+    <li>Quand vous avez trouvé l'organisme qui posséderait l’information recherchée, utilisez le bouton ‘site web’ du côté droit de leur page et vérifiez leurs activités.  </li>   
+    <li>Contactez l'organisme en question par téléphone ou par courriel pour leur demander si elle possède le type d’information que vous cherchez. Habituellement, un contact préalable vous permettra de faire une demande plus ciblée.</li>
     <li>Ne vous inquiétez pas si vous ne trouvez pas le bon organisme du premier coup; ceux que vous contacterez sauront vous rediriger pour votre deuxième recherche.</li>
 </ul>
-<p>En tout état de cause, JeVeuxSavoir ne couvre qu'un nombre limité d'autorités pour la période de projet pilote (voir la <a href="/body/list/all">liste</a>).</p>
+<p>En tout état de cause, <%= site_name %> ne couvre qu'un nombre limité d'organismes publics pour la période de projet pilote (voir la <a href="/body/list/all">liste</a>).</p>
 
 </dd>
 
@@ -37,17 +37,21 @@
 
 <dd>
 
-<p>La loi s’applique à une demande de document.  Votre requêtre doit donc prendre la forme d’une demande pour un document ou pour une information précise possiblement détenu dans un document ou dans un système informatique.</p>
-<p>Si vous n’êtes pas certain de ce qui est en possession de l’organisation en question, n’hésitez pas à appeler le département ou la personne en charge des demandes d’accès à l’information de l’organisation et questionnez-là sur l’information existante. Vous pourrez ensuite envoyer une demande d’accès à l’information en bonne et due forme spécifiant exactement ce que vous demandez. Rappelez-vous qu’une demande précise et informée est le meilleur moyen d’avoir une réponse positive... et qu’inverse une demande vague est le meilleur moyen d’obtenir en rejet.</p>
+<p>La loi s’applique à une demande de <strong>document</strong>. Votre requêtre doit donc prendre la forme d’une demande pour un document ou pour une information précise possiblement détenu dans un document ou dans un système informatique.</p>
+
+<p>Si vous n’êtes pas certain de ce qui est en possession de l’organisation en question, n’hésitez pas à appeler le département ou le responsable de l'accès aux documents de l’organisation et questionnez-là sur l’information existante. Vous pourrez ensuite envoyer une demande d’accès en bonne et due forme spécifiant exactement ce que vous demandez. Une demande précise facilite le travail des responsables d'accès aux documents et accélérera le processus.</p>
 <p>Merci de n’inclure aucun des éléments suivants:</p>
 <ul>
     <li>arguments en faveur de votre cause;</li>
     <li>affirmations diffamatoires ou insultes;</li>
-    <li>demandes de commentaire plutôt que pour information spécifique.</li>
+    <li>demandes de commentaire plutôt que des documents.</li>
 </ul>
-<p>Si vous incluez de tels éléments, nous pourrions avoir à retirer votre requête afin d’éviter des problèmes légaux, ce qui ne vous servira pas et entraînera des problèmes de notre côté également.</p>
-<p>Le site n’héberge que des demandes d’accès à l’information, et non des correspondances générales avec les autorités. Si vous formulez votre requête sous forme de question ouverte ou de demande de commentaire (par exemple, « Pourquoi faites-vous X? » ou «Veuillez expliquer vos raisons derrière X?») risque de rendre votre demande illégitime à nos yeux et à ceux des autorités. Demander des « copies de toutes les politiques et procédures concernant X » correspond à un modèle de requête valide.</p>
-<p>Des messages courts et directs clarifieront votre requête et permettront aux autorités de repérer l’information que vous rechercher, réduisant ainsi le temps d’attente.</p>
+
+<p>Si vous incluez de tels éléments, notamment des propos diffamatoires ou offensants, nous pourrions avoir à retirer votre requête afin d’éviter des problèmes légaux, ce qui ne vous servira pas et entraînera des problèmes de notre côté également.</p>
+
+<p>Le site n’héberge que des demandes d’accès, et non des correspondances générales avec les organismes publics. Si vous formulez votre requête sous forme de question ouverte ou de demande de commentaire (par exemple, « Pourquoi faites-vous X? » ou «Veuillez expliquer vos raisons derrière la décision Y?») vous risquez de voir votre demande rejetée. Demander des « les documents de politique interne relatifs à X» correspond à un modèle de requête valide.</p>
+
+<p>Des messages courts et directs clarifieront votre requête et permettront aux responsable d'accès aux documents de repérer l’information que vous rechercher, réduisant ainsi le temps d’attente.</p>
 
 </dd>
 
@@ -55,23 +59,20 @@
 
 <dd>
 
-<p><strong>Faire une requête d’accès aux documents des organismes publics est presque toujours gratuit.</strong></p>
+<p><strong>Envoyer une requête d’accès aux documents des organismes publics est toujours gratuit.</strong>. Contrairement à d'autres juridictions, le fait d'envoyer une demande d'accès n'implique pas de frais.</p>
 
-<p>Faire une requête d’accès aux documents des organismes publics est presque toujours gratuit.
-Certains départements peuvent parfois indiquer qu’ils pourraient demander un certain montant, mais ils le font rarement. S’ils le font, ils doivent convenir d’un montant avec vous à l’avance.</p>
-<p>Si une information peut sembler coûteuse, il peut être judicieux de raffiner l’étendue de la requête. Par exemple, vous pourriez demander les documents pour la dernière année plutôt que pour les dix dernières années.n marshmallows in the past year than in the past ten years.
+<p>Dans certains cas, les organismes gouvernementaux peuvent être amené à demandé des frais pour l'extraction ou la diffusion du documents (example: graver un DVD, envoi postal, etc.) Les frais en question sont réglementés et le responsable d'accès aux documents devra vous notifier de ces frais à l'avance.</p>
+<p>Si une information s'avère coûteuse, il peut être judicieux de raffiner l’étendue de la requête. Par exemple, vous pourriez demander les documents pour la dernière année plutôt que pour les dix dernières années.
 </p>
 
 </dd>
 
-
-
 <dt id="quickly_response">Obtiendrai-je une réponse rapidement? <a href="#quickly_response">#</a> </dt>
 
 <dd>
-<p>Selon la loi, les autorités publiques doivent répondre promptement aux requêtes.
-Dans presque tous les cas, ils doivent répondre dans les 20 jours ouvrables avec une période d’extention possible de 10 jours.</p>
-<p>JeVeuxSavoir vous enverra un courriel si vous ne recevez pas une réponse dans les temps. Vous pourrez alors envoyer à l’autorité publique un message pour leur rappeler votre requête et leur signaler qu’ils sont en infraction de la loi.</p>
+<p>Selon la loi, les organismes publics doivent répondre promptement aux requêtes.
+La Loi spécifie qu'ils doivent répondre promptement et au maximum dans un délai de 20 jours calendaires avec une période d’extention possible de 10 jours.</p>
+<p><%= site_name %> vous enverra un courriel si vous ne recevez pas une réponse dans le délai de prescrit. Vous pourrez alors envoyer à l'organisation publique un message pour leur rappeler votre requête et leur signaler qu’ils sont en retard.</p>
 
 </dd>
 
@@ -80,23 +81,25 @@ Dans presque tous les cas, ils doivent répondre dans les 20 jours ouvrables ave
 <dd>
 <p>Il y a plusieurs choses que vous pouvez faire si vous ne recevez pas de réponse.</p>
 <ul>
-    <li>Parfois, il y a un réel problème et l’autorité n’a jamais reçu la requête. Il est alors utile de téléphoner à l’autorité en question et demander poliment si la demande a été reçue.</li>
-    <li>S’ils ne l’ont pas reçue, le problème est probablement lié aux filtres de courrier indésirable. Référez l’autorité aux mesures mentionnées dans la réponse à « Je peux voir une requête de JeVeuxSavoir, mais ne l’ai jamais reçue par courriel ».</li>
-    <li>S’il n’y a toujours pas de résultat, vous pouvez alors demander une révision interne et formuler une plainte au Commissaire de l’Information de l’autorité. Lisez notre page <a href="/help/requesting#not_satifised">Insatisfait de la réponse reçue?</a>.</li>
+    <li>Parfois, il y a un réel problème et l'organisme ciblé n’a jamais reçu la requête. Il est alors utile de téléphoner à l'organisme en question et demander poliment si la demande a été reçue.</li>
+    <li>S’ils ne l’ont pas reçue, il se peut qu'un problème technique soit en cause. Dans un tel cas, vous pouvez nous <a href="/help/contact">contacter</a> pour que nous investiguions le problème.</li>
 </ul>
+
+<p>Si la demande a été reçue mais que malgré tout l'organisation ne répond pas, sachez qu'une demande non répondue revient, selon la loi, à un refus. Dans un tel cas, vous pouvez vous en référer à la section suivante.</p>
+
 </dd>
 
 <dt id="not_satifised">Que faire si je suis insatisfait de la réponse reçue?
  <a href="#not_satifised">#</a> </dt>
 <dd>
-<p>Si vous n’avez pas obtenus de réponse malgré vos vérifications, si votre demande a été rejetée ou que les données fournies sont incomplètes, vous pouvez interjeter appel en vertu de l’article 147 de la Loi. Normalement, avec toute réponse de l’autorité sollicité, vous aurez un document expliquant la procédure d'appel. Vous pouvez également consulter la <a href="http://www.cai.gouv.qc.ca/">Commission d’Accès à l’information du Québec</a>.</p>
-<p>Sachez enfin que le processus d’appel sort de ce qui peut être traité dans le cadre de JeVeuxSavoir.</p>
+<p>Si vous n’avez pas obtenu de réponse malgré vos vérifications (non réponse), si votre demande a été rejetée ou que les données fournies sont incomplètes, vous pouvez soumettre une <a href=""></a>demande de révision auprès la <a href="http://www.cai.gouv.qc.ca/">Commission d’Accès à l’information du Québec</a>. Habituellement, la réponse de l'organisme public incluera un document expliquant également ce recours.</p>
+<p>Sachez enfin que les recours sortent de ce qui peut être traité dans le cadre de <%= site_name %>.</p>
 
 </dd>
 
-<dt id="reuse">Il est indiqué que je ne peux pas réutiliser l’information reçue.<a href="#reuse">#</a> </dt>
+<dt id="reuse">Qu'en est-il de la propriété intellectuelle de documents fournis?<a href="#reuse">#</a> </dt>
 <dd>
-<p>Les autorités indiquent parfois des spécifités légales quant à ce que vous pouvez faire de l’information.</p>
+<p>Les organismes publics indiquent parfois des mentions légales quant à ce que vous pouvez faire de l’information.</p>
 <p>Vous pouvez, bien sûr, écrire des articles en utilisant l’information reçue ou en la résumant, ou même en citer une partie. Pour plus d’information, veuillez vous référer à la <a href="http://www.droitauteur.gouv.qc.ca/copyright.php">politique du droit d’auteur gouvernemental</a>.
 </p>
 
@@ -105,34 +108,34 @@ Dans presque tous les cas, ils doivent répondre dans les 20 jours ouvrables ave
 
 
 
-<dt id="private_requests">J’aimerais garder ma requête secrète...du moins jusqu’à ce que je publie l’information! <a href="#private_requests">#</a> </dt>
+<dt id="private_requests">J’aimerais garder ma requête secrète...du moins jusqu’à ce que je publie un article!<a href="#private_requests">#</a> </dt>
 
-<dd><p>JeVeuxSavoir est utilisé uniquement pour les requêtes publiques. Toutes les réponses reçues sont publiées automatiquement sur le site afin que tous puissent les lire.
-Vous devriez contacter l’autorité publique directement si vous souhaitez faire une requête privée.</p>
+<dd><p><%= site_name %> est utilisé uniquement pour les requêtes publiques. Toutes les réponses reçues sont publiées automatiquement sur le site afin que tous puissent les lire.
+Vous devriez contacter l'organisme public directement si vous souhaitez faire une requête privée.</p>
 </dd>
 
 
-<dt id="multiple">Puis-je faire la même requête à plusieurs autorités à la fois? <a href="#multiple">#</a> </dt>
+<dt id="multiple">Puis-je faire la même requête à plusieurs organismes à la fois? <a href="#multiple">#</a> </dt>
 
 <dd>
-  <p>Nous vous demandons d’envoyer d’abord une version d’essai de votre requête à un nombre limité d’autorités. Leurs réponses vous aideront à améliorer la formulation de votre requête afin que vous puissiez obtenir la meilleure information possible lorsque vous enverrez votre requête à toutes les autorités. Il n’y a actuellement aucun système automatisé pour envoyer les requêtes aux autres autorités; vous devrez les copier/coller manuellement.</p>
+  <p>Dans certains cas, il peut être nécessaire de demander le même document à plusieurs organismes, par exemple certaines politiques internes qui peuvent différer d'une organisation à une autre. Nous vous demandons d’envoyer votre requête à une seule organisation dans un premier temps pour valider que votre demande est claire et sera répondue positivement. Les commentaires de cette organisation vous permettrons aussi d'améliorer votre demande afin que vous puissiez obtenir la meilleure information possible lorsque vous enverrez votre requête à toutes les organisations. Il n’y a actuellement aucun système automatisé pour envoyer les requêtes aux autres organisations; vous devrez les copier/coller manuellement.</p>
 </dd>
 
 <dt id="offsite">J’ai fait une requête en dehors du site, comment puis-je l’ajouter aux archives? <a href="#offsite">#</a> </dt>
 
-<dd><p>JeVeuxSavoir est une archive des requêtes faites à travers le site, et non une archive de toutes les requêtes. Nous ne pourrons jamais ajouter d’autres requêtes. En effet, il serait impossible de vérifier que les réponses proviennent de l’autorité en question. Si cela est vraiment important pour vous, vous pouvez toujours refaire la même requête en utilisant JeVeuxSavoir.</p>
+<dd><p><%= site_name %> est une archive des requêtes faites à travers le site, et non une archive de <em>toutes</em> les requêtes. Nous ne souhaitons pas ajouter d’autres requêtes. En effet, il serait impossible de vérifier que les réponses proviennent de l'organisme en question.</p>
 </dd>
 
 <dt id="moderation">Comment modérez-vous les annotations aux requêtes? <a href="#moderation">#</a> </dt>
 
 <dd> 
-<p>Les annotations sur JeVeuxSavoir sont utilisées pour aider les gens à obtenir l’information qu’ils veulent, ou pour donner des indications afin de les diriger vers les ressources dont ils auront besoin. Nous nous gardons le droit de retirer toute autre annotation.<p>
+<p>Les annotations sur <%= site_name %> sont utilisées pour aider les gens à obtenir l’information qu’ils veulent, ou pour donner des indications afin de les diriger vers les ressources dont ils auront besoin. Nous nous gardons le droit de retirer toute autre annotation.<p>
 <p>Finalement, les discussions de nature politique ne sont pas autorisées.</p>
 <dd>
 
 </dl>
 
-<p><strong>Ensuite</strong>, nous vons invitons à lire la section sur la <a href="/help/privacy">confidentialité des données privées</a> --&gt;
+<p><strong>Ensuite</strong>, nous vons invitons à lire la section sur la <a href="/help/privacy">confidentialité des données privées</a> </p>
 
 <div id="hash_link_padding"></div>
 

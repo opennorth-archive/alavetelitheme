@@ -17,7 +17,7 @@
 
 
 <dt id="pourriel">Recevrai-je du courrier indésirable sur mon adresse courriel? <a href="#pourriel">#</a> </dt>
-<dd><p>Non. Après votre inscription à JeVeuxSavoir, nous vous enverrons seulement des courriels liés à une requête que vous avez faite, une alerte à laquelle vous vous êtes inscrit, ou pour toute autre raison spécifiquement autorisée par vous. Nous ne donnerons ou ne vendrons jamais votre adresse à quiconque, à l'exception des organismes gouvernementaux à qui votre demande sera envoyée, et ce, uniquement pendant la période du projet pilote.</p>
+<dd><p>Non. Après votre inscription à <%= site_name %>, nous vous enverrons seulement des courriels liés à une requête que vous avez faite, une alerte à laquelle vous vous êtes inscrit, ou pour toute autre raison spécifiquement autorisée par vous. Nous ne donnerons ou ne vendrons jamais votre adresse à quiconque, à l'exception des organismes gouvernementaux à qui votre demande sera envoyée, et ce, uniquement pendant la période du projet pilote.</p>
 </dd>
 
 
@@ -26,7 +26,7 @@
 <dt id="public">Est-ce que mon nom et mes requêtes apparaîtront publiquement sur le site? <a href="#public">#</a> </dt>
 
 <dd>
-<p>Nous publions vos requêtes sur Internet pour que tous les demandeurs puissent les lire et utiliser l’information que vous avez trouvée. Nous n’effaçons pas les requêtes ou leurs réponses.</p>
+<p>Oui! Nous publions vos requêtes sur Internet pour que tous les demandeurs puissent les lire et utiliser l’information que vous avez trouvée. Nous n’effaçons pas les requêtes ou leurs réponses.</p>
 <p>Votre nom est lié à votre demande; il doit donc être publié également. Il est ici question d’équité, puisque nous publierons le nom du responsable de l'accès aux documents qui rédigera la décision à votre requête. Utiliser votre vrai nom aide également à vous mettre en contact avec des gens qui souhaiteraient vous assister pour votre recherche ou votre campagne.
 </p>
 </dd>
@@ -37,7 +37,7 @@
 
 
 <dd>
-<p>Bien que la loi ne vous oblige pas à utiliser votre véritable nom, il s’agit d’une bonne pratique à adopter dans un contexte où l’on souhaite augmenter la transparence. De plus, si votre demande est refusée, vous devrez utiliser votre véritable nom afin de contester la décision.</p>
+<p>Bien que la loi ne vous oblige pas à utiliser votre véritable nom, il s’agit d’une bonne pratique à adopter dans un contexte où l’on souhaite augmenter la transparence. De plus, si votre demande est refusée, vous devrez vraisemblablement faire une demande de révision ou interjeter appel; avoir utilisé un pseudonyme risque de poser problème lors de ces procédures.</p>
 <p>Il y a d’autres solutions si vous ne souhaitez pas soumettre votre nom complet.</p>
 <ul>
 	<li>Utilisez votre nom sous une différente forme. Si votre nom est Michel Tremblay, vous pourriez soumettre une demande sous le nom M. Tremblay;</li>
@@ -54,17 +54,26 @@
 <dt id="adresse">N’est-il pas nécessaire de fournir une adresse postale afin de recevoir une copie imprimée de la réponse? <a href="#adresse">#</a> </dt>
 
 <dd>
-<p>Dans la mesure du possible, demandez à ce que la réponse vous soit fournie par courrier électronique en réponse à votre demande. C’est ainsi que les documents fournis en réponse à votre demande deviendront accessibles à tous. Si votre interlocuteur vous répond, par exemple, qu'il est seulement possible de soumettre une réponse imprimée, insistez pour qu’ils scannent les documents.</p>
+<p>Dans la mesure du possible, demandez à ce que la réponse vous soit fournie par courrier électronique en réponse à votre demande. C’est ainsi que les documents fournis en réponse à votre demande deviendront accessibles à tous. Si votre interlocuteur vous répond, par exemple, qu'il est seulement possible de soumettre une réponse imprimée, <strong>insistez</strong> pour qu’ils scannent les documents.</p>
+
+<p>Pour les documents trop volumineux pour le courriel, l'organisme public peut nous <a href="/help/contact">contacter</a> et nous lui indiquerons un moyen pour téléverser son fichier directement sur le site</p>
+
+</dd>
+
+<dt id="adressebis">L'organisme public insiste vraiment pour m'envoyer un document par la poste <a href="#adresse">#</a> </dt>
+
+<dd>
+<p>Dans certains cas, les documents sont trop volumineux pour être téléversés sur le site ou en trop grand nombre pour être scannés. Dans ce cas, <%= site_name %> vous permettra d'envoyer vos coordonnées postales au responsable de l'accès aux documents: après avoir reçu un nouveau message de l'organisme public, <%= site_name %> vous demandera le statut de la demande. Parmi les choix, vous pouvez signifier que la réponse se fera par la poste. Si vous cliquez sur cette option, le site vous guidera pour transmettre de l'information à l'organisme public sans que cette dernière ne soit visible du public.</p>
 
 </dd>
 
 <dt id="cookies">Qu’en est-il des fichiers témoins? <a href="#cookies">#</a> </dt>
 
 <dd>
-JeVeuxSavoir utilise des fichiers témoins (connus sous le nom de cookies) contenant des données permettant à l’application de vous reconnaître lorsque vous naviguez sur le site. Ces fichiers témoins ne contiennent aucune information personnelle et sont de deux types:
+<%= site_name %> utilise des fichiers témoins (connus sous le nom de cookies) contenant des données permettant à l’application de vous reconnaître lorsque vous naviguez sur le site. Ces fichiers témoins ne contiennent aucune information personnelle et sont de deux types:
  
 <ul> 
-	<li>Fichier témoin volatile: Ces fichiers sont nécessaires au fonctionnement de l’application JeVeuxSavoir pour vous reconnaitre lorsque vous passez d’une page à une autre ou pour mémoriser certains éléments de contexte. Les témoins volatiles disparaissent lorsque vous quittez la session JeVeuxSavoir ou que vous fermez votre navigateur web.</li>
+	<li>Fichier témoin volatile: Ces fichiers sont nécessaires au fonctionnement de l’application <%= site_name %> pour vous reconnaitre lorsque vous passez d’une page à une autre ou pour mémoriser certains éléments de contexte. Les témoins volatiles disparaissent lorsque vous quittez la session <%= site_name %> ou que vous fermez votre navigateur web.</li>
 	<li>Fichier témoin persistant: Ces fichiers sont sauvegardé sur votre disque dur lorsque vous éteignez votre navigateur et peuvent perdurer jusqu’à un mois après votre dernière visite. Il s’agit principalement:
 		<ul>
 		<li>Du fichier témoin de session qui permet à l’application de voir que vous êtes un utilisateur enregistré dans l’application. Ce témoin a une durée de vie d’un mois si vous cliquez l’option “Se rappeler du mot de passe” lorsque vous vous connectez. Sinon ce témoin est supprimé à la fermeture de votre navigateur</li>
@@ -78,7 +87,7 @@ JeVeuxSavoir utilise des fichiers témoins (connus sous le nom de cookies) conte
 
 <dd>
 
-<p>JeVeuxSavoir est un système d’archivage permanent et public des requêtes d’accès à l’information. Bien que vous puissiez juger que la réponse à une requête n’est plus utile après un moment, elle pourrait être utile à d’autres. Pour cette raison, nous n’effaçons pas les requêtes.
+<p><%= site_name %> est un système d’archivage permanent et public des requêtes d’accès aux documents. Bien que vous puissiez juger que la réponse à une requête n’est plus utile après un moment, elle pourrait être utile à d’autres. Pour cette raison, nous n’effaçons pas les requêtes.
 Nous pouvons retirer ou changer votre nom sur le site internet (voir la question suivante). Dans le même ordre d’idée, nous pouvons aussi effacer d’autres informations personnelles.</p>
 <p>Si vous êtes préoccupé par de telles possibilités avant de faire votre requête, consultez la section sur l’utilisation d’un <a href="#nom">pseudonyme.</a></p>
 
@@ -90,8 +99,8 @@ Nous pouvons retirer ou changer votre nom sur le site internet (voir la question
 
 <p>Si vous voyez certaines de vos informations personnelles sur le site que vous souhaitez cacher ou retirer, faites-le nous savoir. Spécifiez exactement quelle information pose problème, la raison et l’emplacement sur le site.</p>
 S’il s’agit d’une information personnelle confidentielle postée accidentellement, nous la retirerons. Normalement, nous ne considérons les requêtes de retrait d’information que lorsqu’elles proviennent de l’individu concerné. Cependant, nous apprécierions dans les cas d’information jugée confidentielle, que toute incongruité nous soit signalée.</p> 
-<p>Nous considérons qu’il est dans l’intérêt du public de publier les noms des officiers ou des agents d’autorité publique. Nous ne retirerons ces noms que sous des circonstances exceptionnelles, comme la possibilité que le dévoilement d’un nom pose un risque significatif à la sécurité de l’individu en question. Si vous êtes dans une telle situation et que vous souhaitez voir votre nom retiré, vous devez nous faire parvenir une requête de la part de votre superviseur.</p>
-<p>Pour toute autre requête, nous appliquons une évaluation d’intérêt public pour décider si l’information devrait être retirée. Nous ne pouvons pas réellement modifier plusieurs types de pièces jointes (tels que des fichiers PDF, Microsoft Word ou Excel); nous demanderons alors que l’autorité en place nous expédie les documents en question une seconde fois, avec l’information personnelle retirée.  </p>
+<p>Nous considérons qu’il est dans l’intérêt du public de publier les noms des officiers ou des responsales d'organismes publics. Nous ne retirerons ces noms que sous des circonstances exceptionnelles, comme la possibilité que le dévoilement d’un nom pose un risque significatif à la sécurité de l’individu en question. Si vous êtes dans une telle situation et que vous souhaitez voir votre nom retiré, vous devez nous faire parvenir une requête de la part de votre superviseur.</p>
+<p>Pour toute autre requête, nous appliquons une évaluation d’intérêt public pour décider si l’information devrait être retirée. Nous ne pouvons pas réellement modifier plusieurs types de pièces jointes (tels que des fichiers PDF, Microsoft Word ou Excel); nous demanderons alors que l’organisme nous expédie les documents en question une seconde fois, avec l’information personnelle retirée.  </p>
 </dd>
 
 
