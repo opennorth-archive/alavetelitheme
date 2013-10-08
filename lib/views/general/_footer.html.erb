@@ -1,14 +1,17 @@
 <div id="footer">
   <div class="footer-holder">
+    <%= link_to _("Contact {{site_name}}", :site_name => site_name), help_contact_path %>
+| <a href="/help/conditions">Conditions d'utilisation</a>
+<%= render :partial => 'general/credits' %>
     <ul class="footer-nav">
+<!--
       <li><%= link_to _("Contact {{site_name}}", :site_name => site_name), help_contact_path %></li>
       <li class="twitter"><a href="https://twitter.com/<%= AlaveteliConfiguration::twitter_username %>"><%= _("Follow us on twitter") %></a></li>
       <li class="style"><%= _('Powered by <a href="http://www.alaveteli.org/">Alaveteli</a>') %></li>
+-->
 <!-- TODO: fix this, or remove
       <li>Designed by Amorous Idealist</li>
 -->
     </ul>
   </div>
 </div>
-
-<div class="after-footer">&nbsp;</div>

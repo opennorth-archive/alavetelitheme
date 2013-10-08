@@ -1,0 +1,26 @@
+<h1>Signaler une demander: <%= @info_request.title %></h1>
+
+<% if @info_request.attention_requested %>
+  <p><%= _("This request has already been reported for administrator attention") %></p>
+<% else %>
+  <p>
+    Le fait de signaler une demande envoie une notification aux administrateurs du site. Ils regarder cette requête et répondre dès que possible.
+  </p>
+  <p>Pourquoi considérez-vous cette demande inappropriée?</p>
+
+  <%= form_tag request_report_path(:request_id => @info_request.url_title) do %>
+    <p>
+      <label class="form_label" for="reason">Motif:</label>
+      <%= select_tag :reason, options_for_select(@info_request.report_reasons, @reason), :prompt => "Choisissez un motif" %>
+    </p>
+    <p>
+      <label class="form_label" for="message">Description:</label>
+      <%= text_area_tag :message, @message, :rows => 10, :cols => 60 %>
+    </p>
+
+    <div class="form_button">
+        <%= submit_tag _("Report request") %>
+    </div>
+
+  <% end %>
+<% end %>
