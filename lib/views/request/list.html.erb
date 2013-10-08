@@ -1,0 +1,36 @@
+
+<div id="header_centre">
+  <h1><%=@title%></h1>
+  <%= render :partial => 'request/request_filter_form' %>
+</div>
+
+<!-- TODO: this is gone in the design.  Should we really get rid of it?
+<div id="TODO">
+  <h2><%= _("Follow these requests") %></h2>
+  <% if @track_thing %>
+      <%= render :partial => 'track/tracking_links', :locals => { :track_thing => @track_thing, :own_request => false, :location => 'main' } %>
+  <% end %>
+</div>
+-->
+
+<div style="clear:both"></div>
+
+<div class="results_section">
+  <% # TODO: Cache for 5 minutes %>
+    <% if @list_results.empty? %>
+        <p> <%= _('No requests of this sort yet.')%></p>
+    <% else %>
+        <h3 class="section_header"><%= _('{{count}} FOI requests found', :count => @matches_estimated) %></h3>
+        <div class="results_block">
+          <% for result in @list_results%>
+              <% if result.class.to_s == 'InfoRequestEvent' %>
+                  <%= render :partial => 'request/request_listing_via_event', :locals => { :event => result, :info_request => result.info_request } %>
+              <% else %>
+                  <p><strong><%= _('Unexpected search result type') %> <%=result.class.to_s%></strong></p>
+              <% end %>
+          <% end %>
+        </div>
+    <% end %>
+
+  <%= will_paginate WillPaginate::Collection.new(@page, @per_page, @show_no_more_than) %>
+</div>
