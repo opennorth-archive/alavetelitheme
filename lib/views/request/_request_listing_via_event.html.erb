@@ -4,6 +4,9 @@ end %>
 
 <div class="request_listing">
   <div class="request_left">
+      <div class="request_icon">
+          <img src="/alavetelitheme/images/status-<%= info_request.calculate_status %>.png" />
+      </div>
       <span class="head">
         <% if event.is_incoming_message? %>
             <%= link_to highlight_words(info_request.title, @highlight_words), incoming_message_path(event.incoming_message_selective_columns("incoming_messages.id")) %>
