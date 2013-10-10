@@ -12,8 +12,7 @@
             <li>Pour faire une demande d'accès à l'information publique, rendez-vous <a href="<%= new_request_path %>">ici</a>.</li>
 
             <li>
-            Si vous souhaitez obtenir des informations vous concernant, merci de lire notre page d'
-            <a href="<%= help_requesting_path(:anchor => 'data_protection') %>">aide</a>.
+            Si vous souhaitez obtenir des informations vous concernant, merci de lire notre page d'<a href="<%= help_requesting_path(:anchor => 'data_protection')%>">aide</a>.
             </li>
         </ul>
 
@@ -41,7 +40,7 @@
         <p>
             <label class="form_label" for="contact_name">Votre nom:</label>
             <%= f.text_field :name, :size => 20 %>
-            (or <%= link_to "sign in", signin_path(:r => request.fullpath) %>)
+            (ou <%= link_to "connectez-vous", signin_path(:r => request.fullpath) %>)
         </p>
 
         <p>
@@ -76,7 +75,7 @@
     <% end %>
 
     <p class="form_note">
-    Nous pouvons uniquement offrir de l'aide en lien avec les problèmes techniques ou question en lien avec Je Veux Savoir.
+    Nous pouvons uniquement offrir de l'aide en lien avec les problèmes techniques ou en lien avec Je Veux Savoir.
     </P>
 
 

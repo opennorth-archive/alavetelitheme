@@ -1,6 +1,6 @@
 <h2>
   <%= _("<span>Rechercher parmi</span><br/>
-  {{number_of_requests}} demandes<span> et</span><br/>
+  {{number_of_requests}} demandes <span> et</span><br/>
   {{number_of_authorities}} organismes",
   :number_of_requests => InfoRequest.visible.count, :number_of_authorities => PublicBody.visible.count) %>
 </h2>

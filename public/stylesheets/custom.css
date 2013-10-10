@@ -235,7 +235,7 @@ padding: 59px 36px 72px 0px;
 }
 #right_column{
 	float:right;
-	width:374px;
+	width:400px;
 	padding:0 0 0;
 }
 
@@ -354,6 +354,7 @@ div#stepwise_make_request {
   line-height: 24px;
   max-height: 9999px;
  display: inline-block;
+ height: inherit;
 }
 input[type="submit"], #stepwise_make_request {
   color:#fff;
@@ -368,7 +369,7 @@ input[type="submit"], #stepwise_make_request {
   text-decoration:none;
   font-weight:bold;
   letter-spacing:0.5px;
-  max-height: 39px;
+  height: 39px;
   cursor:pointer;
   background:#3f3e5d  url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNmM2U1ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIlIiBzdG9wLWNvbG9yPSIjMWMzMDc1IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNyUiIHN0b3AtY29sb3I9IiMyMDM2N2YiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIyMCUiIHN0b3AtY29sb3I9IiMyMzNlOGQiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIzMyUiIHN0b3AtY29sb3I9IiMyNTQwOTEiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI2OSUiIHN0b3AtY29sb3I9IiMyNTQwOTEiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI4OSUiIHN0b3AtY29sb3I9IiMyMjNjODkiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMWQzMTc4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
   background:  -moz-linear-gradient(top,  #3f3e5d 0%, #1c3075 2%, #20367f 7%, #233e8d 20%, #254091 33%, #254091 69%, #223c89 89%, #1d3178 100%);
@@ -379,9 +380,12 @@ input[type="submit"], #stepwise_make_request {
   background:  linear-gradient(to bottom,  #3f3e5d 0%,#1c3075 2%,#20367f 7%,#233e8d 20%,#254091 33%,#254091 69%,#223c89 89%,#1d3178 100%);
 }
 
-#user_profile_content input[type="submit"] {
+#user_profile_header input[type="submit"], #help_contact input[type="submit"] , #advanced-search input[type="submit"] {
  font-size: 13px;
-line-height: 27px;
+line-height: 20px;
+max-height: 24px;
+border-radius: 4px;
+
 }
 
 #stepwise_make_request>a  {
@@ -405,6 +409,7 @@ text-decoration:  none;
   line-height:17px;
   /*font-style:italic;*/
   padding:42px  86px 74px 82px;
+  overflow: auto;
 }
 
 .controller_help:after,  #request_select_authority:after, .controller_public_body:after{
@@ -430,10 +435,10 @@ h3.section_header,
 .request_listing span.head a,
 #request_show #right_column h3 {
   color:#24408f;
-  font-size:14px;
+  font-size:16px;
   line-height:21px;
   font-style:normal;
-  font-weight:normal;
+  font-weight:bold;
          text-decoration:none;
 }
 
@@ -639,6 +644,11 @@ padding:2px;
    position: relative;
    padding: 0 0 0 50px;
 }
+
+#authority_preview .request_left {
+   width: 235px;
+}
+
 .request_left .request_icon {
    position: absolute;
    top: 0px;
@@ -804,6 +814,7 @@ padding:2px;
 .body_listing>.head {
   line-height: 30px;
   border-bottom: 1px solid #244090;
+ margin-top: 10px;
   padding-bottom: 3px;
   margin-bottom: 15px;
 }
@@ -820,7 +831,7 @@ display:  block;
 }
 
 
-.body_listing  a {
+.head a {
 font-size:  15pt;
 font-weight:  normal;
 color:  #244090;
@@ -926,6 +937,17 @@ border-color: rgba(36, 64, 144, 0.46);
   padding: 0px;
 }
 
+#preview_form ul{
+border: 1px dotted;
+border-radius: 4px;
+margin: 30px 0 0 0;
+background: #FFF2F0;
+border-color: rgba(144, 75, 36, 0.46);
+list-style-type: none;
+padding: 15px;
+width: 657px;
+}
+
 #write_form.new_info_request .form_label  {
   display: inline-block;
   max-width: 55px;
@@ -949,7 +971,7 @@ line-height: 140%;
   width: 600px;
 }
 #request_show #left_column.half {
-  width: 340px;
+  width: 420px;
   margin-bottom: 40px;
 }
 
@@ -1053,6 +1075,13 @@ font-weight: normal;
   text-transform: none;
 }
 
+#request_bottom{
+float: left;
+width: 450px;
+overflow: auto;
+
+}
+
 .comment_quote {
   display: none;
 }
@@ -1127,7 +1156,7 @@ display: inline-block;
 }
 
 
-#request_main_right h2, #show_response_view h2{
+#request_main_right h2, #show_response_view h2, #help_contact h2, .controller_general h2{
   text-transform: none;
   font-weight: normal;
   margin: 0px;
@@ -1169,7 +1198,7 @@ vertical-align: top;
    margin-top: 30px;
 }
 
-#user_profile_search h2, #user_profile_search h2#annotations, .controller_general h2 {
+#user_profile_search h2, #user_profile_search h2#annotations, #user_profile_search h2 {
    margin-top: 30px;
    text-transform: none;
 }
