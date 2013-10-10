@@ -35,6 +35,9 @@ td, th {
    font-size: 90%;
 }
 
+.requests-subfilters .title {
+width: 100%;
+}
 
 #banner_inner:after{
 	content:"";
@@ -350,6 +353,7 @@ h2>span{
 div#stepwise_make_request {
   line-height: 24px;
   max-height: 9999px;
+ display: inline-block;
 }
 input[type="submit"], #stepwise_make_request {
   color:#fff;
@@ -465,6 +469,7 @@ h3.section_header,
 #examples_1  ul li{
   border-bottom:2px  solid #ebeced;
   padding:15px  12px 18px;
+  margin-top: 20px;
 }
 #examples_1  ul li:first-child{padding:0 12px 15px;}
 .excerpt{
@@ -777,7 +782,6 @@ padding:2px;
    font-size: 36px;
    line-height: 35px;
    font-style: normal;
-   width: 450px;
 }
 
 #authority_search_ahead_results {
@@ -826,9 +830,10 @@ text-decoration:  none;
 }
 
 #authority_preview  h1 {
-  font-size: 30px;
+  font-size: 24px;
   font-weight:  normal;
   line-height:  30px;
+  width: 100%;
 }
 
 #foi_results_section  {
@@ -849,6 +854,11 @@ line-height:  120%;
    float: right;
    width: 230px;
    margin: 0 0 30px 70px;
+}
+
+#general_search #header_left {
+float: left;
+width: 400px;
 }
 
 #header_right>h2  {
@@ -898,11 +908,19 @@ margin:  20px 0;
 
 #request_advice  {
    float: right;
-   width: 200px;
+   width: 220px;
+border: 1px dotted;
+border-radius: 4px;
+padding: 10px 10px 10px 0px;
+margin: 50px 0 0 0;
+background: #F0F2FF;
+border-color: rgba(36, 64, 144, 0.46);
 }
+
 
 #request_advice  ul{
   list-style-type:  none;
+  padding-left: 15px;
 }
 
 #request_advice  li{
@@ -1153,7 +1171,19 @@ vertical-align: top;
    margin-top: 30px;
 }
 
-#user_profile_search h2.foi_results, #user_profile_search h2#annotations {
+#user_profile_search h2, #user_profile_search h2#annotations, .controller_general h2 {
    margin-top: 30px;
    text-transform: none;
 }
+
+.errorExplanation {
+border: 1px dotted;
+border-radius: 4px;
+padding: 10px 10px 10px 0px;
+margin: 20px 0;
+background: rgba(255, 251, 231, 0.43);
+border-color: rgba(255, 0, 0, 0.46);
+color: #D63C3C;
+font-weight: bold;
+}
+
