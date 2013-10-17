@@ -796,6 +796,11 @@ text-decoration: underline;
    font-style: normal;
 }
 
+.controller_public_body h1 {
+font-size: 32px;
+line-height: 42px;
+}
+
 #authority_search_ahead_results {
    width: 350px;
    float: left;
