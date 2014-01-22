@@ -791,14 +791,14 @@ text-decoration: underline;
 }
 
 .controller_request  h1 {
-   font-size: 36px;
-   line-height: 35px;
+   font-size: 30px;
+   line-height: 32px;
    font-style: normal;
 }
 
 .controller_public_body h1 {
-font-size: 32px;
-line-height: 42px;
+font-size: 24px;
+line-height: 28px;
 }
 
 #authority_search_ahead_results {
@@ -896,11 +896,20 @@ margin:  20px 0;
 
 }
 
+#to_label {
+   float: left;
+   width: 100px;
+}
 #to_public_body  {
    font-weight: bold;
    font-style: normal;
    font-size: 150%;
-   margin-left: 60px;
+   margin-left: 100px;
+   margin-bottom: 15px;
+}
+
+#clear {
+    clear: both;
 }
 
 .form_item_note,  #request_header_text {
@@ -955,11 +964,6 @@ border-color: rgba(144, 75, 36, 0.46);
 list-style-type: none;
 padding: 15px;
 width: 657px;
-}
-
-#write_form.new_info_request .form_label  {
-  display: inline-block;
-  max-width: 55px;
 }
 
 #content #notice {
