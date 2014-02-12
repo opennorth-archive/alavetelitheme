@@ -5,7 +5,7 @@ end %>
 <div class="request_listing">
   <div class="request_left">
       <div class="request_icon">
-          <img src="/alavetelitheme/images/status-<%= info_request.calculate_status %>.png" />
+          <%= image_tag("status-" + info_request.calculate_status + ".png") %>
       </div>
       <span class="head">
         <% if event.is_incoming_message? %>
