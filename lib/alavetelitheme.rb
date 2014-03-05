@@ -50,3 +50,5 @@ repos = [
 ]
 FastGettext.add_text_domain 'app', :type=>:chain, :chain=>repos
 FastGettext.default_text_domain = 'app'
+
+Rails.application.config.assets.precompile.push 'custom.css'
